@@ -52,14 +52,18 @@ class LandingPage extends StatelessWidget {
                   width: 52*fem,
                   height: 52*fem,
                   child: TextButton(
-                    onPressed: (){},
+                    onPressed: ()async{
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Signin()
+                        )
+                      );
+                    },
                     style: TextButton.styleFrom (
                       padding: EdgeInsets.zero,
                     ),
-                    child: Image.asset(
-                      'assets/app/images/button.png',
-                      width: 52*fem,
-                      height: 52*fem,
+                    child: Icon(Icons.arrow_circle_right_sharp,
+                      size: 62*fem,
                     ),
                   ),
                 ),
