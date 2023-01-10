@@ -2,7 +2,7 @@ import 'package:MyDayApp/pages/LandingPage.dart';
 import 'package:flutter/material.dart';
 import 'package:MyDayApp/utils.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
 		home: Scaffold(
 		body: SingleChildScrollView(
 			child: LandingPage(),
-		),
-		),
-	);
+				),
+			),
+		);
 	}
 }
